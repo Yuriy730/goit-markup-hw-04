@@ -110,6 +110,7 @@ img {
 .address-list {
   display: inline-flex;
   align-items: center;
+  fill: var(--primery-text-color);
 }
 .address-mail {
   margin-left: 304px;
@@ -124,20 +125,18 @@ img {
   letter-spacing: 0.02em;
   color: var(--primery-text-color);
 }
-.address-mail:hover,
-.address-mail:focus {
+.address-cont .address-mail:hover,
+.address-cont .address-mail:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 .address-mail > .icon-envelope {
   margin-right: 10px;
-  fill: var(--primery-text-color);
-}
-.address-mail > .icon-envelope:hover,
-.address-mail > .icon-envelope:focus {
-  fill: var(--accent-color);
 }
 
 .address-cont .address-tel {
+  display: flex;
+  align-items: center;
   font-style: normal;
   font-size: 14px;
   line-height: 1.143;
@@ -148,16 +147,27 @@ img {
 .address-cont .address-tel:hover,
 .address-cont .address-tel:focus {
   color: var(--accent-color);
-}
-.address-tel {
-  outline: 2px solid tomato;
+  fill: var(--accent-color);
 }
 
 /*=============== Hero =================*/
 
 .hero {
   background-color: #2f303a;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(49, 41, 41, 0.5)
+    ),
+    url(../images/images-hw-04/background-studio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   text-align: center;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 200px 0;
 }
 .hero-title {
@@ -168,7 +178,6 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primery-white-color);
-  background-color: #2f303a;
 }
 
 /* =============button =================*/
@@ -182,8 +191,9 @@ img {
   letter-spacing: 0.06em;
   color: var(--primery-white-color);
   background-color: var(--accent-color);
-  border-color: none;
+  border: none;
   outline: none;
+  cursor: pointer;
 }
 
 /*============== features =============*/
@@ -254,6 +264,7 @@ img {
   color: var(--title-text-color);
   background: #f5f4fa;
   border: none;
+  cursor: pointer;
   border-radius: 4px;
   transform: rotate(-0.72deg);
 }
