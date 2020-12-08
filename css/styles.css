@@ -105,12 +105,18 @@ img {
   align-items: center;
 }
 .address-list:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
+}
+.address-list {
+  display: inline-flex;
+  align-items: center;
 }
 .address-mail {
   margin-left: 304px;
 }
 .address-cont .address-mail {
+  display: flex;
+  align-items: center;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -118,26 +124,18 @@ img {
   letter-spacing: 0.02em;
   color: var(--primery-text-color);
 }
-.address-cont .address-mail:hover,
-.address-cont .address-mail:focus {
+.address-mail:hover,
+.address-mail:focus {
   color: var(--accent-color);
-}
-.address-mail {
-  display: inline-flex;
-  align-items: center;
 }
 .address-mail > .icon-envelope {
   margin-right: 10px;
+  fill: var(--primery-text-color);
 }
-
-/*.address-mail::before {
-  content: "";
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  background-image: url(../images/images-hw-04/icons/envelope.svg);
-  background-size: contain;
-}*/
+.address-mail > .icon-envelope:hover,
+.address-mail > .icon-envelope:focus {
+  fill: var(--accent-color);
+}
 
 .address-cont .address-tel {
   font-style: normal;
@@ -150,6 +148,9 @@ img {
 .address-cont .address-tel:hover,
 .address-cont .address-tel:focus {
   color: var(--accent-color);
+}
+.address-tel {
+  outline: 2px solid tomato;
 }
 
 /*=============== Hero =================*/
