@@ -111,7 +111,6 @@ img {
   margin-left: 304px;
 }
 .address-cont .address-mail {
-  display: inline-flex;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -123,15 +122,22 @@ img {
 .address-cont .address-mail:focus {
   color: var(--accent-color);
 }
-.address-mail::before {
+.address-mail {
+  display: inline-flex;
+  align-items: center;
+}
+.address-mail > .icon-envelope {
+  margin-right: 10px;
+}
+
+/*.address-mail::before {
   content: "";
   width: 16px;
   height: 12px;
   margin-right: 10px;
   background-image: url(../images/images-hw-04/icons/envelope.svg);
   background-size: contain;
-  outline: 1px solid #000000;
-}
+}*/
 
 .address-cont .address-tel {
   font-style: normal;
