@@ -68,7 +68,7 @@ img {
   color: var(--accent-color);
 }
 .logo {
-  margin-right: 94px;
+  margin-right: 93px;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -108,12 +108,7 @@ img {
   margin-right: 30px;
 }
 .address-list {
-  display: inline-flex;
-  align-items: center;
   fill: var(--primery-text-color);
-}
-.address-mail {
-  margin-left: 304px;
 }
 .address-cont .address-mail {
   display: flex;
@@ -123,6 +118,7 @@ img {
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
+  margin-left: 305px;
   color: var(--primery-text-color);
 }
 .address-cont .address-mail:hover,
@@ -130,14 +126,16 @@ img {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
-.address-mail > .icon-envelope {
+.address-mail > .icon-envelope,
+.address-tel > .icon-smartphone {
+  display: block;
   margin-right: 10px;
 }
-
 .address-cont .address-tel {
   display: flex;
   align-items: center;
   font-style: normal;
+  margin-left: -10px;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
@@ -163,6 +161,11 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.12), 0px 5px 21px rgba(0, 0, 0, 0.14),
+    0px 5px 13px rgba(0, 0, 0, 0.2), 0px 5px 10px rgba(0, 0, 0, 0.25),
+    0px 5px 11px rgba(0, 0, 0, 0.1), 0px 5px 12px rgba(0, 0, 0, 0.08),
+    0px 2px 10px rgba(0, 0, 0, 0.12);
+
   text-align: center;
   max-width: 1600px;
   height: 600px;
@@ -204,6 +207,17 @@ img {
   display: flex;
   justify-content: space-between;
 }
+
+.icons-features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 20px;
+  background-color: var(--secondary-background-color);
+}
+
 .features-list-title {
   color: var(--title-text-color);
 }
@@ -298,9 +312,15 @@ img {
   margin-left: -30px;
 }
 .crew > .crewlist {
+  width: 270px;
   margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc(100% / 4 - 30px);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  outline: 2px solid tomato;
+  background-color: var(--primery-white-color);
 }
 .crew > .crewlist {
   padding-bottom: 0px;
@@ -322,6 +342,17 @@ img {
   color: var(--title-text-color);
   font-style: normal;
   letter-spacing: 0.03em;
+}
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+.social-list-icon {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-color: var(--primery-white-color);
+  border-radius: 50%;
 }
 /*==========PORTFOLIO PROJECT=============*/
 
