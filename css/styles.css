@@ -3,7 +3,7 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primery-white-color: #ffffff;
-
+  --primery-grey-color: #afb1b8;
   --secondary-background-color: #f5f4fa;
 }
 .body {
@@ -161,11 +161,6 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.12), 0px 5px 21px rgba(0, 0, 0, 0.14),
-    0px 5px 13px rgba(0, 0, 0, 0.2), 0px 5px 10px rgba(0, 0, 0, 0.25),
-    0px 5px 11px rgba(0, 0, 0, 0.1), 0px 5px 12px rgba(0, 0, 0, 0.08),
-    0px 2px 10px rgba(0, 0, 0, 0.12);
-
   text-align: center;
   max-width: 1600px;
   height: 600px;
@@ -319,7 +314,7 @@ img {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  outline: 2px solid tomato;
+
   background-color: var(--primery-white-color);
 }
 .crew > .crewlist {
@@ -343,16 +338,75 @@ img {
   font-style: normal;
   letter-spacing: 0.03em;
 }
+
 .social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  margin-top: 16px;
+}
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+.social-list-link:hover > .social-list-icon,
+.social-list-link:focus > .social-list-icon {
+  fill: var(--primery-white-color);
 }
 .social-list-icon {
   display: block;
-  width: 44px;
-  height: 44px;
-  background-color: var(--primery-white-color);
-  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  fill: var(--primery-grey-color);
+}
+/*========CUSTOMER===============*/
+.regular-customer {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.customer-list {
+  display: flex;
+  justify-content: space-between;
+}
+.customer-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.166;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  color: var(--title-text-color);
+}
+.customer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--primery-grey-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  fill: var(--primery-grey-color);
+}
+.customer-link:hover,
+.customer-link:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.customer-link:hover > .customer-icon,
+.customer-link:focus > .customer-icon {
+  fill: var(--accent-color);
 }
 /*==========PORTFOLIO PROJECT=============*/
 
@@ -400,11 +454,17 @@ img {
   padding-bottom: 60px;
   background-color: #2f303a;
 }
-.address-tube {
+.tube {
   display: flex;
+}
+.container-tube {
+  margin-right: 70px;
+}
+.address-tube {
   margin-top: 20px;
 }
 .tube .logo-tube {
+  display: flex;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -426,7 +486,7 @@ img {
   font-weight: 400;
   color: var(--primery-white-color);
 }
-
+.address-tube .address-tel-unit,
 .address-tube .address-mail-unit {
   font-style: normal;
   font-weight: normal;
@@ -440,14 +500,50 @@ img {
   color: var(--accent-color);
 }
 
-.address-tube .address-tel-unit {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
 .address-tube .address-tel-unit:hover,
 .address-tube .address-tel-unit:focus {
   color: var(--accent-color);
+}
+.social-web {
+  outline: 1px solid palevioletred;
+}
+.slogan-web {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  color: var(--primery-white-color);
+  outline: 1px solid green;
+}
+
+.social-web-list {
+  display: flex;
+  outline: 1px solid gold;
+}
+.social-web-list-item {
+}
+.social-web-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-web-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social-web-list-link:hover,
+.social-web-list-link:focus {
+  background-color: var(--accent-color);
+}
+.social-web-list-link:hover > .social-list-icon,
+.social-web-list-link:focus > .social-list-icon {
+  fill: var(--primery-white-color);
+}
+.social-web-list-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: rgba(255, 255, 255, 0.9);
 }
